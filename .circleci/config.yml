@@ -2,10 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.28
+      - image: jekyll/builder
     working_directory: ~/project
     steps:
       - checkout
       - run:
           name: "Test Website"
-          command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: htmlproofer src --allow-hash-href --check-html --empty-alt-ignore --disable-external
