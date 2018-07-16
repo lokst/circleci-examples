@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run:
           name: "Test Website"
-          command: htmlproofer src --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: /usr/gem/gems/html-proofer-3.9.1/bin/htmlproofer src --allow-hash-href --check-html --empty-alt-ignore --disable-external
