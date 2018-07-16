@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php
+    working_directory: ~/project
+    steps:
+      - checkout
