@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jekyll/builder
+      - image: jekyll/builder:pages
     working_directory: ~/project
     steps:
       - checkout
